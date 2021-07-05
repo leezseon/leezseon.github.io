@@ -447,14 +447,59 @@ a:hover {
   }
 }
 /* cont - main */
-#main {
+#container #main {
   width: 100%; height: 100vh;
 }
-#main img.logo {
+#container #main img.logo {
   width: 100px; height: auto;
   position: relative;
   left: 50%; top: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+#container #main .pre-about p {
+  padding-top: 80px;
+  position: absolute;
+  bottom: 50px; left: 50%; transform: translateX(-50%);
+}
+#container #main .pre-about p span {
+  position: absolute;
+  bottom: 50px; left: 60%; transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  margin-left: -12px;
+  border-left: 1px solid #010101;
+  border-bottom: 1px solid #010101;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+ /* 스크롤 방향 유도 화살표 */
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* cont - business-area */

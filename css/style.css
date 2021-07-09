@@ -428,10 +428,12 @@ a:hover {
   }
   #header .menu .right-area .right-menu .menu-location ul.gnb li {
     font-size: 28px;
+    font-weight: 600;
     height: 40px;
   }
   #header .menu .right-area .right-menu .menu-location ul.profile-link {
     font-size: 20px;
+    font-weight: 600;
     height: 40px;
     margin-top: 40px;
   }

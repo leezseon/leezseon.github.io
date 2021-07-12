@@ -931,6 +931,7 @@ a:hover {
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 55px;
+    -webkit-appearance: none;
   }
 }
 @media screen and (max-width: 767px) {

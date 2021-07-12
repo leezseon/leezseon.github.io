@@ -928,6 +928,7 @@ a:hover {
   }
   #container #contact .devide-right ul.textarea li textarea {
     font-size: 20px;
+    -webkit-appearance: none;
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 55px;

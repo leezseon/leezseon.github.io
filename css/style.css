@@ -179,10 +179,10 @@ a {
 		-webkit-transform : translateY(0) rotate(0);
 	}
 	50% {
-		-webkit-transform : translateY(10px) rotate(0);
+		-webkit-transform : translateY(7px) rotate(0);
 	}
 	100% {
-		-webkit-transform : translateY(10px) rotate(45deg);
+		-webkit-transform : translateY(7px) rotate(45deg);
 	}
 }
 @keyframes active-menu-bar07-01 {
@@ -190,10 +190,10 @@ a {
 		transform : translateY(0) rotate(0);
 	}
 	50% {
-		transform : translateY(10px) rotate(0);
+		transform : translateY(7px) rotate(0);
 	}
 	100% {
-		transform : translateY(10px) rotate(45deg);
+		transform : translateY(7px) rotate(45deg);
 	}
 }
 #header .menu-btn.active .line:nth-of-type(2) {
@@ -208,10 +208,10 @@ a {
 		-webkit-transform : translateY(0) rotate(0);
 	}
 	50% {
-		-webkit-transform : translateY(-10px) rotate(0);
+		-webkit-transform : translateY(-7px) rotate(0);
 	}
 	100% {
-		-webkit-transform : translateY(-10px) rotate(-45deg);
+		-webkit-transform : translateY(-7px) rotate(-45deg);
 	}
 }
 @keyframes active-menu-bar07-02 {
@@ -219,10 +219,10 @@ a {
 		transform : translateY(0) rotate(0);
 	}
 	50% {
-		transform : translateY(-10px) rotate(0);
+		transform : translateY(-7px) rotate(0);
 	}
 	100% {
-		transform : translateY(-10px) rotate(-45deg);
+		transform : translateY(-7px) rotate(-45deg);
 	}
 }
 #header .menu {
@@ -396,7 +396,7 @@ a:hover {
 @media screen and (max-width: 767px) {
   #header .header-mobile {
     width: 100vw; height: 50px; 
-    background-color: #fff;
+    /* background-color: #fff; */
     position: fixed;
   }
   #header a img.logo-home,
@@ -408,7 +408,34 @@ a:hover {
     opacity: 1;
   }
   #header .menu-btn {
-    top: 25px; right: 15px;
+    top: 25px; right: 5px;
+  }
+  #header .menu-btn .line {
+    width: 24px; height: auto;
+    border: 1px solid #222;
+    background-color: #222;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);  
+    transition: all .4s;
+  }
+  #header .menu-btn .line:nth-of-type(1) {
+    position: inherit;
+    top: calc(50% - 8px);
+    -webkit-animation : menu-bar07-01 .75s forwards;
+    animation : menu-bar07-01 .75s forwards;
+  }
+  #header .menu-btn .line:nth-of-type(2) {
+    position: inherit;
+    top: 50%;
+    transition : all .25s .25s;
+    opacity : 1;
+  }
+  #header .menu-btn .line:nth-of-type(3) {
+    position: inherit;
+    top: calc(50% + 6px);
+    -webkit-animation : menu-bar07-02 .75s forwards;
+    animation : menu-bar07-02 .75s forwards;
   }
   #header .menu .left-area {
     display: none;

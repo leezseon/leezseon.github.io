@@ -995,7 +995,7 @@ a:hover {
     margin-top: 50px;
   }
   #container #contact .devide-right ul.textarea {
-    width: 90vw;
+    width: 90%;
     left: 50%;
     transform: translateX(-50%);
     top: initial;
@@ -1003,6 +1003,7 @@ a:hover {
   }
   #container #contact .devide-right ul.textarea li textarea {
     font-size: 14px;
+    width: 100%;
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 26px;

@@ -179,10 +179,10 @@ a {
 		-webkit-transform : translateY(0) rotate(0);
 	}
 	50% {
-		-webkit-transform : translateY(7px) rotate(0);
+		-webkit-transform : translateY(10px) rotate(0);
 	}
 	100% {
-		-webkit-transform : translateY(7px) rotate(45deg);
+		-webkit-transform : translateY(10px) rotate(45deg);
 	}
 }
 @keyframes active-menu-bar07-01 {
@@ -190,10 +190,10 @@ a {
 		transform : translateY(0) rotate(0);
 	}
 	50% {
-		transform : translateY(7px) rotate(0);
+		transform : translateY(10px) rotate(0);
 	}
 	100% {
-		transform : translateY(7px) rotate(45deg);
+		transform : translateY(10px) rotate(45deg);
 	}
 }
 #header .menu-btn.active .line:nth-of-type(2) {
@@ -208,10 +208,10 @@ a {
 		-webkit-transform : translateY(0) rotate(0);
 	}
 	50% {
-		-webkit-transform : translateY(-7px) rotate(0);
+		-webkit-transform : translateY(-10px) rotate(0);
 	}
 	100% {
-		-webkit-transform : translateY(-7px) rotate(-45deg);
+		-webkit-transform : translateY(-10px) rotate(-45deg);
 	}
 }
 @keyframes active-menu-bar07-02 {
@@ -219,10 +219,10 @@ a {
 		transform : translateY(0) rotate(0);
 	}
 	50% {
-		transform : translateY(-7px) rotate(0);
+		transform : translateY(-10px) rotate(0);
 	}
 	100% {
-		transform : translateY(-7px) rotate(-45deg);
+		transform : translateY(-10px) rotate(-45deg);
 	}
 }
 #header .menu {
@@ -436,6 +436,50 @@ a:hover {
     top: calc(50% + 6px);
     -webkit-animation : menu-bar07-02 .75s forwards;
     animation : menu-bar07-02 .75s forwards;
+  }
+  @-webkit-keyframes active-menu-bar07-01 {
+    0% {
+      -webkit-transform : translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform : translateY(7px) rotate(0);
+    }
+    100% {
+      -webkit-transform : translateY(7px) rotate(45deg);
+    }
+  }
+  @keyframes active-menu-bar07-01 {
+    0% {
+      transform : translateY(0) rotate(0);
+    }
+    50% {
+      transform : translateY(7px) rotate(0);
+    }
+    100% {
+      transform : translateY(7px) rotate(45deg);
+    }
+  }
+  @-webkit-keyframes active-menu-bar07-02 {
+    0% {
+      -webkit-transform : translateY(0) rotate(0);
+    }
+    50% {
+      -webkit-transform : translateY(-7px) rotate(0);
+    }
+    100% {
+      -webkit-transform : translateY(-7px) rotate(-45deg);
+    }
+  }
+  @keyframes active-menu-bar07-02 {
+    0% {
+      transform : translateY(0) rotate(0);
+    }
+    50% {
+      transform : translateY(-7px) rotate(0);
+    }
+    100% {
+      transform : translateY(-7px) rotate(-45deg);
+    }
   }
   #header .menu .left-area {
     display: none;

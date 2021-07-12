@@ -995,7 +995,7 @@ a:hover {
     margin-top: 50px;
   }
   #container #contact .devide-right ul.textarea {
-    width: 90%;
+    width: 90vw;
     left: 50%;
     transform: translateX(-50%);
     top: initial;

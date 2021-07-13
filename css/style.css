@@ -526,15 +526,15 @@ a:hover {
 /* cont - main */
 #container #main {
   width: 100%; height: 100vh;
+  position: relative
 }
 #container #main img.logo {
   width: 100px; height: auto;
-  position: relative;
+  position: absolute;
   left: 50%; top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 #container #main .pre-about p {
-  padding-top: 80px;
   position: absolute;
   bottom: 50px; left: 50%; transform: translateX(-50%);
 }
@@ -863,7 +863,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   /* main */
-  #main img.logo {
+  #container #main img.logo {
     width: 67px;
   }
   #container #about-us {
@@ -991,7 +991,7 @@ a:hover {
 }
 @media screen and (max-width: 767px) {
   /* main */
-  #main img.logo {
+  #container #main img.logo {
     width: 67px;
   }
   #container #about-us {

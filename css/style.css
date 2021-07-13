@@ -62,7 +62,7 @@ a {
   font-family: 'Noto Sans';
   src: url('../fonts/NotoSansKR-Light.otf') format('truetype');
   font-family: 'Franklin';
-  src: url('../fonts/Franklin Gothic Book Regular.ttf') format('truetype');
+  src: url('../fonts/Franklin\ Gothic\ Book\ Regular.ttf') format('truetype');
 }
 
 :root {

@@ -500,6 +500,7 @@ a:hover {
   #header .menu .right-area .right-menu .menu-location ul.gnb li {
     font-size: 28px;
     font-weight: 600;
+    letter-spacing: -1px;
     height: 40px;
   }
   #header .menu .right-area .right-menu .menu-location ul.profile-link {

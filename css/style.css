@@ -1087,8 +1087,20 @@ a:hover {
   #container #contact .devide-right ul.textarea li textarea {
     font-size: 14px;
     width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 26px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
   }
 }

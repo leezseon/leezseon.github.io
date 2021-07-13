@@ -1069,11 +1069,11 @@ a:hover {
   /* contact */
   #container #contact h1{
     font-size: 55px;
-    top: 420px;
+    top: 520px;
   } 
   #container #contact .devide-left,
   #container #contact .devide-right {
-    width: 100%; height: 400px;
+    width: 100%; height: 500px;
     display: block;
     position: initial;
     margin-top: 50px;

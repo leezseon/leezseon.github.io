@@ -846,7 +846,6 @@ a:hover {
   background-color: #fff;
   outline: none;
   cursor: pointer;
-  margin-bottom: 50px;
 }
 #contact ul.textarea li input[type="submit"]:hover {
   color: #ffd700;
@@ -988,6 +987,7 @@ a:hover {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1103,5 +1103,6 @@ a:hover {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
+    margin-bottom: 50px;
   }
 }

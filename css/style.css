@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
+  -webkit-font-family: 'Noto Sans', sans-serif;
+  -moz-font-family: 'Noto Sans', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -500,7 +502,7 @@ a:hover {
   #header .menu .right-area .right-menu .menu-location ul.gnb li {
     font-size: 28px;
     font-weight: 600;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     height: 40px;
   }
   #header .menu .right-area .right-menu .menu-location ul.profile-link {

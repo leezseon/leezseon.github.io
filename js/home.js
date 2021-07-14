@@ -83,6 +83,23 @@ window.onload = function() {
   window.addEventListener("load", saFunc);
   window.addEventListener("scroll", saFunc);
 
+  // when click scroll, page scroll down
+  const btn = document.querySelectorAll(".pre-about p span, .pre-about p");
+  const target = document.getElementById("about-us");
+  const targetTop = target.getBoundingClientRect().top; // 타겟 절대위치
+
+  btn.forEach(_btn => {
+    _btn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const num = _btn.innerText;
+
+      window.scroll({
+        top: ((num - 1) * targetTop), behavior: 'smooth'
+      }, 500);
+    })
+  })
+    
   // main page buisiness intro - modal
   const enter = document.getElementsByClassName("enter");
   const modalWrap = document.getElementsByClassName("modal-wrap");

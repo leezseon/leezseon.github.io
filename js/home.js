@@ -96,7 +96,7 @@ window.onload = function() {
 
       window.scroll({
         top: ((num - 1) * targetTop), behavior: 'smooth'
-      }, 500);
+      }, targetTop);
     })
   })
     

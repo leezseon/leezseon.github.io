@@ -30,6 +30,7 @@ body {
   font-family: 'Franklin', 'Noto Sans', sans-serif;
   -webkit-font-family: 'Franklin', 'Noto Sans', sans-serif;
   -moz-font-family: 'Franklin', 'Noto Sans', sans-serif;
+  cursor: none;
 }
 ol, ul {
 	list-style: none;
@@ -57,6 +58,7 @@ html {
 a {
   color: #222;
   text-decoration: none;
+  cursor: none;
 }
 @font-face {
   font-family: 'Noto Sans';
@@ -75,6 +77,32 @@ a {
   top: 0; left: 0;
   z-index: 900;
   /* width: 100vw; height: 100vh; */
+}
+#header .cursor {
+  width: 1.5rem; height: 1.5rem;
+  border: 2px solid #222;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 100% 100%;
+  background-size: cover;
+}
+#header .pointer {
+  width: 3rem; height: 3rem;
+  border: 2px solid #222;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9000;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform: translateX(-50%) translateY(-50%);
+  transform-origin: 100% 100%;
+  background-size: cover;
 }
 #header a img.logo-home {
   width: 66px; height: auto;
@@ -100,7 +128,7 @@ a {
   top: 50%; right: 50px;
   transform: translateY(-50%);
   z-index: 1000;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all .4s;
 }
 #header .menu-btn .line {
@@ -299,7 +327,7 @@ a {
   transform: translateX(-20%) translateY(-50%);
 }
 #header .menu .right-menu .menu-location ul.gnb {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 #header .menu .right-menu .menu-location ul.gnb li {
   font-size: 49px;
@@ -311,7 +339,7 @@ a:hover {
   color: #808080;
 }
 #header .menu .right-menu .menu-location ul.profile-link {
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-top: 75px;
 }
 #header .menu .right-menu .menu-location ul.profile-link {
@@ -346,47 +374,6 @@ a:hover {
   width: 225px;; height: 40px;
   line-height: 40px;
   float: left;
-}
-#header .nav {
-  position: inherit;
-  top: 50%; left: 50px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-#header .nav a.dot {
-  width: 25px; height: 20px;
-  border-radius: 25px;
-  border: 3px solid #222;
-  position: inherit;
-}
-#header .nav a.dot:hover, .on {
-  background-color: #222;
-  transition: background-color 0.3s ease;
-}
-#header .nav a.dot:nth-of-type(1) {
-  top: calc(50% - 60px);
-}
-#header .nav a.dot:nth-of-type(2) {
-  top: calc(50% - 30px);
-}
-#header .nav a.dot:nth-of-type(3) {
-  top: calc(50%);
-}
-#header .nav a.dot:nth-of-type(4) {
-  top: calc(50% + 30px);
-}
-#header .nav a.dot:nth-of-type(5) {
-  top: calc(50% + 60px);
-}
-#header .nav .home-btn {
-  position: fixed;
-  top: 50px; left: 50px;
-  display: none;
-  z-index: 1000;
-}
-#header .nav .home-btn a img.logo-home {
-  width: 64px; height: auto;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #header .menu .left-area {
@@ -541,6 +528,7 @@ a:hover {
 #container #main .pre-about p {
   position: absolute;
   bottom: 50px; left: 50%; transform: translateX(-50%);
+  /* cursor: pointer; */
 }
 #container #main .pre-about p span {
   position: absolute;
@@ -558,6 +546,7 @@ a:hover {
   box-sizing: border-box;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+  /* cursor: pointer; */
 }
  /* 스크롤 방향 유도 화살표 */
 @-webkit-keyframes sdb {
@@ -636,7 +625,7 @@ a:hover {
   margin-top: 5px;
 }
 #container #about-us ul.subject li.enter {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 #container #about-us ul.subject li.enter .img-box-left {
   width: 65%; height: 85%;
@@ -712,7 +701,7 @@ a:hover {
   width: 40px; height: 40px; 
   position: absolute;
   top: 3px; right: 13px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .modal .exit .exit-line:nth-child(1) {
   width: 34px; height: 3px;
@@ -849,7 +838,7 @@ a:hover {
   font-size: 55px;
   background-color: #fff;
   outline: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 #contact ul.textarea li input[type="submit"]:hover {
   color: #ffd700;

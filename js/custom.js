@@ -1,67 +1,67 @@
 window.onload = function() {
 (function($) {
   // custom cursor
-  let mouseCursor = document.querySelector(".cursor");
-  let navLinks = document.querySelectorAll(".pointer-hover"); //메뉴 링크
+  let mouseCursor = document.querySelector('.cursor');
+  let navLinks = document.querySelectorAll('.pointer-hover'); //메뉴 링크
   //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
-  window.addEventListener("scroll", cursor);
-  window.addEventListener("mousemove", cursor);
+  window.addEventListener('scroll', cursor);
+  window.addEventListener('mousemove', cursor);
   //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
   function cursor(e) {
-    mouseCursor.style.left = e.pageX + "px";
-    mouseCursor.style.top = e.pageY - scrollY + "px";
+    mouseCursor.style.left = e.pageX + 'px';
+    mouseCursor.style.top = e.pageY - scrollY + 'px';
   }
 
   navLinks.forEach((link) => {
-    link.addEventListener("mouseover", () => {
-      mouseCursor.classList.add("pointer");
-      mouseCursor.style.zIndex = "9000";
-      link.classList.add("pointer-hover");
+    link.addEventListener('mouseover', () => {
+      mouseCursor.classList.add('pointer');
+      mouseCursor.style.zIndex = '9000';
+      link.classList.add('pointer-hover');
     });
-    link.addEventListener("mouseleave", () => {
-      mouseCursor.classList.remove("pointer");
-      mouseCursor.style.zIndex = "9000";
-      link.classList.remove("pointer-hover");
+    link.addEventListener('mouseleave', () => {
+      mouseCursor.classList.remove('pointer');
+      mouseCursor.style.zIndex = '9000';
+      link.classList.remove('pointer-hover');
     });
   });
 
   // logo-home
-  const homeBtn = document.getElementsByClassName("logo-home");
-  const homeBtnHov = document.getElementsByClassName("logo-home-hover");
+  const homeBtn = document.getElementsByClassName('logo-home');
+  const homeBtnHov = document.getElementsByClassName('logo-home-hover');
   
-  homeBtn[0].style.display = "block";
-  homeBtnHov[0].style.display = "block";
+  homeBtn[0].style.display = 'block';
+  homeBtnHov[0].style.display = 'block';
 
   // menu-btn animation
-  const menuBar = $(".menu-btn")
+  const menuBar = $('.menu-btn')
   
   menuBar.each(function() {
     let $this = $(this);
 
-    $this.on("click", function(e) {
+    $this.on('click', function(e) {
       e.preventDefault();
-      $(this).toggleClass("active");
+      $(this).toggleClass('active');
     });
   });
 
   // menu
-  $("#header .menu-btn").click(function() {
-    const gnb = $(".menu");
-    if(gnb.css("display") == "none") {
+  $('#header .menu-btn').click(function() {
+    const gnb = $('.menu');
+    if(gnb.css('display') == 'none') {
       gnb.show();
-      $(".left-img, .right-menu").animate({left: 0}, 1000);
+      $('.left-img, .right-menu').animate({left: 0}, 1000);
     }else {
-      $(".left-img, .right-menu").animate({left: 1000}, 1000);
+      $('.left-img, .right-menu').animate({left: 1000}, 1000);
       gnb.fadeOut();
     } 
   });
 
   // dot(navigation)
-  // var dotColor = $("a.dot");
+  // var dotColor = $('a.dot');
 
   // dotColor.click(function() {
-  //   dotColor.removeClass("on");
-  //   $(this).addClass("on");
+  //   dotColor.removeClass('on');
+  //   $(this).addClass('on');
   // });
 
   // var scroll = new Scroll();
@@ -75,7 +75,7 @@ window.onload = function() {
 
   // Scroll.prototype.init = function() {
   //   for(var i = 0; i < this.scroll.length; i++) {
-  //     this.location[i] = this.$(".page").eq(i).offset().top;
+  //     this.location[i] = this.$('.page').eq(i).offset().top;
   //   }
   // }
 
@@ -84,7 +84,7 @@ window.onload = function() {
 
   //   objThis.dotColor.click(function() {
   //     var index = $(this).index();
-  //     objThis.html.animate({"scrollTop": objThis.location[index]});
+  //     objThis.html.animate({'scrollTop': objThis.location[index]});
   //   });
   // }
 
@@ -96,8 +96,8 @@ window.onload = function() {
   // business-area
   // businessArea();
   // function businessArea(){
-  //   var el = $("span.business");
-  //   var texts = ["Branding", "Viral Marketing", "Development", "Design", "Display"];
+  //   var el = $('span.business');
+  //   var texts = ['Branding', 'Viral Marketing', 'Development', 'Design', 'Display'];
   //   var count = texts.length - 1;
   //   var i = 1;
     
@@ -120,19 +120,19 @@ window.onload = function() {
 
   // scroll animation
   const saTriggerMargin = 300;
-  const saElementList = document.querySelectorAll(".sa");
+  const saElementList = document.querySelectorAll('.sa');
 
   const saFunc = function() {
     for (let element of saElementList) {
-      if (!element.classList.contains("show")) {
+      if (!element.classList.contains('show')) {
         if (window.innerHeight > element.getBoundingClientRect().top + saTriggerMargin) {
-          element.classList.add("show");
+          element.classList.add('show');
         }
       }
     }
   }
 
-  window.addEventListener("load", saFunc);
-  window.addEventListener("scroll", saFunc);
+  window.addEventListener('load', saFunc);
+  window.addEventListener('scroll', saFunc);
 })(jQuery);
 }

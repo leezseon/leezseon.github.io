@@ -86,7 +86,7 @@ window.onload = function() {
   // when click scroll, page scroll down
   const btn = document.querySelectorAll(".pre-about p span, .pre-about p");
   const target = document.getElementById("about-us");
-  const targetTop = target.getBoundingClientRect().top; // 타겟 절대위치
+  const targetTop = target.getBoundingClientRect().height; // 타겟 절대위치
 
   btn.forEach(_btn => {
     _btn.addEventListener('click', (e) => {

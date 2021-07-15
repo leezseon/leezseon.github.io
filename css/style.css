@@ -376,6 +376,10 @@ a:hover {
   float: left;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  #header .cursor, 
+  #header .pointer {
+    display: none;
+  }
   #header .menu .left-area {
     display: none;
   }
@@ -385,6 +389,10 @@ a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  #header .cursor, 
+  #header .pointer {
+    display: none;
+  }
   #header .header-mobile {
     width: 100vw; height: 50px; 
     /* background-color: #fff; */

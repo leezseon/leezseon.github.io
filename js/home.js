@@ -92,8 +92,8 @@ window.onload = function() {
     _btn.addEventListener('click', (e)=>{
       e.preventDefault();    
       $('html, body').animate({
-        scrollTop: targetTop
-      }, 300);
+        scrollTop: targetTop, behavior: 'smooth'
+      });
     });
   });
     

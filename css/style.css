@@ -730,9 +730,6 @@ a:hover {
   outline: 0;
   -webkit-outline: 0;
   -moz-outline: 0;
-  background-color: none;
-  -webkit-background-color: none;
-  -moz-background-color: none;
 }
 #container button.btn-top p {
   position: fixed;
@@ -960,7 +957,7 @@ a:hover {
     padding: 10px;
   }
   /* works */
-  #container .btn-top p {
+  #container button.btn-top p {
     right: 15px;
     z-index: 2;
   }
@@ -1071,7 +1068,7 @@ a:hover {
     padding: 10px;
   }
   /* works */
-  #container .btn-top p {
+  #container button.btn-top p {
     right: 15px;
     z-index: 2;
   }

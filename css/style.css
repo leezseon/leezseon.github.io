@@ -724,9 +724,9 @@ a:hover {
 
 /* con - works */
 #container button.btn-top {
-  border: none;
-  -webkit-border: none;
-  -moz-border: none;
+  border: 0;
+  -webkit-border: 0;
+  -moz-border: 0;
   outline: none;
   -webkit-outline: none;
   -moz-outline: none;

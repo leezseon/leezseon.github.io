@@ -723,14 +723,22 @@ a:hover {
 }
 
 /* con - works */
-#container .btn-top p {
+#container button.btn-top {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+#container button.btn-top p {
   position: fixed;
   bottom: calc(50px + 15px); right: 60px;
   font-weight: 900;
 }
-#container .btn-top p span{
+#container button.btn-top p span{
   position: absolute;
-  bottom: -15px; right: 7px; 
+  bottom: -15px; right: 6px; 
   width: 12px;
   height: 12px;
   margin-left: -12px;
@@ -863,6 +871,12 @@ a:hover {
   resize: none;
   padding: 10px;
   outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }
 #contact ul.textarea li input[type="submit"] {
   border-style: none;
@@ -870,6 +884,12 @@ a:hover {
   background-color: #fff;
   outline: none;
   /* cursor: pointer; */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
 }
 #contact ul.textarea li input[type="submit"]:hover {
   color: #ffd700;
@@ -1000,22 +1020,9 @@ a:hover {
   }
   #container #contact .devide-right ul.textarea li textarea {
     font-size: 20px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 55px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1120,21 +1127,8 @@ a:hover {
   #container #contact .devide-right ul.textarea li textarea {
     font-size: 14px;
     width: 100%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
   }
   #container #contact .devide-right ul.textarea li input[type="submit"] {
     font-size: 26px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    margin-bottom: 50px;
   }
 }

@@ -724,12 +724,9 @@ a:hover {
 
 /* con - works */
 #container button.btn-top {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
+  border: none;
+  -webkit-border: none;
+  -moz-border: none;
 }
 #container button.btn-top p {
   position: fixed;

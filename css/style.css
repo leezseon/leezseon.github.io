@@ -730,6 +730,9 @@ a:hover {
   outline: 0;
   -webkit-outline: 0;
   -moz-outline: 0;
+  background-color: initial;
+  -webkit-background-color: initial;
+  -moz-background-color: initial;
 }
 #container button.btn-top p {
   position: fixed;

@@ -727,9 +727,9 @@ a:hover {
   border: 0;
   -webkit-border: 0;
   -moz-border: 0;
-  outline: none;
-  -webkit-outline: none;
-  -moz-outline: none;
+  outline: 0;
+  -webkit-outline: 0;
+  -moz-outline: 0;
 }
 #container button.btn-top p {
   position: fixed;

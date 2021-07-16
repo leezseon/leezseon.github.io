@@ -60,6 +60,12 @@
   </div>
 
   <div id="container" class="container">
+    <button type="button" onclick="goTop()" class="btn-top">
+      <p class="pointer-hover">
+        TOP
+        <span class="pointer-hover"></span>
+      </p>
+    </button>
     <div class="list">
       <div class="work">
         <h1>Design</h1>
@@ -393,5 +399,11 @@
       </div>
     </div>
   </div>
+
+  <script>
+    function goTop(){
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 </html>

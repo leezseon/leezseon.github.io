@@ -56,68 +56,6 @@ window.onload = function() {
     } 
   });
 
-  // dot(navigation)
-  // var dotColor = $('a.dot');
-
-  // dotColor.click(function() {
-  //   dotColor.removeClass('on');
-  //   $(this).addClass('on');
-  // });
-
-  // var scroll = new Scroll();
-
-  // function Scroll() {
-  //   this.currentScroll = 0;
-  //   this.location = [];
-
-  //   this.start();
-  // }
-
-  // Scroll.prototype.init = function() {
-  //   for(var i = 0; i < this.scroll.length; i++) {
-  //     this.location[i] = this.$('.page').eq(i).offset().top;
-  //   }
-  // }
-
-  // Scroll.prototype.initEvent = function() {
-  //   var objThis = this;
-
-  //   objThis.dotColor.click(function() {
-  //     var index = $(this).index();
-  //     objThis.html.animate({'scrollTop': objThis.location[index]});
-  //   });
-  // }
-
-  // $(window).scroll(function() {
-  //   objThis.currentScroll = $(window).scrollTop();
-
-  // });
-  
-  // business-area
-  // businessArea();
-  // function businessArea(){
-  //   var el = $('span.business');
-  //   var texts = ['Branding', 'Viral Marketing', 'Development', 'Design', 'Display'];
-  //   var count = texts.length - 1;
-  //   var i = 1;
-    
-  //   if(el.length <= 0){
-  //     return;
-  //   }
-  
-  //   (function enter() {
-  //     titTimer = setTimeout(function(){
-  //       el.html(texts[i]);
-  //       i++;
-  //       enter()
-  //       if(i > count){
-  //         i=0;
-  //         return;
-  //       }
-  //     }, 1500);
-  //   })();
-  // }
-
   // scroll animation
   const saTriggerMargin = 300;
   const saElementList = document.querySelectorAll('.sa');

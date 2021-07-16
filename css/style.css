@@ -722,6 +722,28 @@ a:hover {
   display: none;
 }
 
+/* con - works */
+#container .btn-top p {
+  position: fixed;
+  bottom: calc(50px + 25px); right: 60px;
+}
+#container .btn-top p span{
+  position: absolute;
+  bottom: -25px; right: 6px; 
+  width: 12px;
+  height: 12px;
+  margin-left: -12px;
+  border-left: 1px solid #010101;
+  border-bottom: 1px solid #010101;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(135deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
 #container .list {
   position: relative;
   margin: 0 120px;

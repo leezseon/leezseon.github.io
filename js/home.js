@@ -85,7 +85,7 @@ window.onload = function() {
 
   // when click scroll, page scroll down
   const btn = document.querySelectorAll('.pre-about p span, .pre-about p');
-  const target = document.getElementById('about-us');
+  const target = document.querySelector('.about-us');
   const targetTop = target.getBoundingClientRect().height;
   
   btn.forEach(_btn =>{
@@ -96,8 +96,18 @@ window.onload = function() {
       });
     });
   });
+
+  // main page business area - layout toggle
+  const winWidth = window.innerWidth;
+
+  if(winWidth > 767) {
+    $('.about-us').removeClass('swiper-container');
+    $('.subject').removeClass('swiper-wrapper');
+    $('.enter').removeClass('swiper-slide');
+    $('.swiper-pagination').remove('.swiper-pagination');
+  }
     
-  // main page buisiness intro - modal
+  // main page business intro - modal
   const enter = document.getElementsByClassName('enter');
   const modalWrap = document.getElementsByClassName('modal-wrap');
   const exit = document.getElementsByClassName('exit');
@@ -134,12 +144,4 @@ window.onload = function() {
       $(changeImg[i]).addClass('hovered');
     });
   }
-
-  // setInterval(function() {  
-  //   $('.about-us-mobile ul.subject').stop().animate({'margin-left':'-100%'},2000,
-  //     function() {
-  //       $('.about-us-mobile ul.subject li').first().appendTo('.about-us-mobile ul.subject');
-  //       $('.about-us-mobile ul.subject').css({'margin-left':'0px'});
-  //     });
-  // },2500);
 }

@@ -72,5 +72,11 @@ window.onload = function() {
 
   window.addEventListener('load', saFunc);
   window.addEventListener('scroll', saFunc);
+
+  // when submit, alert
+  $('ul.textarea li input').click(function() {
+    alert("상담문의가 담당자에게 전송되었습니다. \n빠른 시일 내로 답변드리겠습니다. 감사합니다.")
+  });
+
 })(jQuery);
 }

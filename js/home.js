@@ -100,7 +100,7 @@ window.onload = function() {
   // main page business area - layout toggle
   const winWidth = window.innerWidth;
 
-  if(winWidth > 767) {
+  if(winWidth > 1024) {
     $('.about-us').removeClass('swiper-container');
     $('.subject').removeClass('swiper-wrapper');
     $('.enter').removeClass('swiper-slide');

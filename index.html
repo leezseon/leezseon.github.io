@@ -201,7 +201,9 @@
   <!-- Initialize Swiper -->
   <script>
     const winWidth = window.innerWidth;
-    if(winWidth <= 767) {
+    if(winWidth <= 1024) {
+      $('.subject li:first-child').remove("li");
+      
       const swiper = new Swiper(".swiper-container", {
         slidesPerView: 1.1,
         spaceBetween: 0,

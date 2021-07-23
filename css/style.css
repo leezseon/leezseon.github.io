@@ -1118,6 +1118,9 @@ a:hover {
     color: #222;
     padding: 5px;
   }
+  #container .list .work ul.contents li.title .con .hov h2 {
+    font-size: 34px;
+  }
   #container .list .work ul.contents li.title .con .hov .bgcolor {
     display: none;
   }

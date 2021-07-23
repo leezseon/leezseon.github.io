@@ -1103,7 +1103,7 @@ a:hover {
     width: 100%;
   }
   #container .list .work ul.contents li.title:not(:first-child) {
-    margin-top: 60px;
+    margin-top: 0;
   }
   #container .list .work ul.contents li.title .con.sa.sa-up {
     transform: none;
